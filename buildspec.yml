@@ -15,8 +15,8 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - mv target/*.jar policy-app.jar
+      - mv target/*.jar consumer-microservice-app.jar
       - dir
 artifacts:
   files:
-    - policy-app.jar
+    - consumer-microservice-app.jar
