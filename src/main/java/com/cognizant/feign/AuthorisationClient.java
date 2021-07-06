@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
  * Authorization Service FeignClient and for Connect with it
  */
 @SuppressWarnings("el-syntax")
-@FeignClient(name = "authorization-service", url = "${AUTH_SERVICE:http://localhost:8084}") // server.port of authorization class
+@FeignClient(name = "authorization-service", url = "${AUTH_SERVICE:http://pod4authorization-env.eba-wpqvpigb.us-west-2.elasticbeanstalk.com/}") // server.port of authorization class
 public interface AuthorisationClient {
 
 	/**
