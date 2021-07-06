@@ -29,7 +29,7 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @Slf4j
 @RequestMapping("/consumer")
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="*")
 public class ConsumerController {
 	
 	private ConsumerMicroservicesImpl consumerMicroservicesImpl;
